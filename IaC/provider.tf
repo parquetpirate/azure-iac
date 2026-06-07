@@ -1,10 +1,10 @@
-# configuração do Terraform
+# Terraform configuration
 terraform {
 
-  # Especificando o provedor
+  # Specifying the provider
   required_providers {
 
-    # Provedor AzureRM da HashiCorp
+    # AzureRM provider by HashiCorp
     azurerm = {
       source  = "hashicorp/azurerm"
       version = "~> 4.0"
@@ -12,9 +12,9 @@ terraform {
   }
 }
 
-# Configurando do AzureRM
+# AzureRM provider configuration
 provider "azurerm" {
 
-  # Habilita recursos e funcionalidades padrão
+  # Enable default resources and features
   features {}
 }
